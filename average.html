@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table,th,td{
+border:1px solid black;
+border-collapse:collapse;
+text-align: left;
+padding:5px;
+width: 100%;
+}
+</style>
+</head>
+
+<body>
+<h3>MARKSHEET</h3>
+<table>
+<tr><th>Subject</th><th>Marks</th></tr>
+<tr><td>English</td><td>84</td></tr>
+<tr><td>Telugu</td><td>87</td></tr>
+<tr><td>Maths</td><td>98</td></tr>
+<tr><td>Science</td><td>95</td></tr>
+<tr><td>Social</td><td>92</td></tr>
+<tr><th>Total</th><th id="tot"></th></tr>
+<tr><th>Average</th><th id="avg"></th></tr>
+</table>
+<script>
+document.getElementById("tot").innerHTML=84+87+98+95+92;
+document.getElementById("avg").innerHTML=(84+87+98+95+92)/5;
+</script>
+</body>
+</html>
