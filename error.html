@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Error handling</title>
+</head>
+<body>
+<p>Enter number between 10 and 100</p>
+<input type="text" id="test">
+<button type="button" onclick="myFunc()">Submit</button>
+<p id="demo"></p>
+ <script>
+ function myFunc()
+ {
+ var message,x;
+ message=document.getElementById("demo");
+ message.innerHTML="";
+ x=document.getElementById("test").value;
+ try{
+ if(x=="") throw " empty";
+ if(isNaN(x))throw " not a number";
+ x=Number(x);
+ if(x>100) throw " too high";
+ if(x<10) throw " too low";
+ }
+ catch(err){
+ message.innerHTML="Input"+err;
+ }
+ finally{
+ document.getElementById("test").value="";
+ }
+ }
+ </script>
+ </body>
+ </html>
+ 

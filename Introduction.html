@@ -3,9 +3,23 @@
 <head>
 </head>
 <body>
+
 <h1>DHTML</h1>
+<div id="data">
 <p> DHTML stands for Dynamic HTML.It is a combination of HTML,CSS,JS and DOM.</p>
 <p>it is used to create interactive and animated webpages. DHTML is not a web language like HTML but it is a interface of different languages.</P>
-<script src="javaScript.js"></script>
+</div>
+<p id="demo"></p>
+<script>
+var txt="DHTML stands for Dynamic HTML. It is a combination of HTML,CSS,JS and DOM. It is used to create interactive and animated webpages. DHTML is not a web language like HTML but it is a interface of different languages."
+var arr=txt.split(" ");
+
+document.write( "5th word is"+" "+arr[4]+"; ");
+document.write( "7th word is"+" "+arr[6]+"; ");
+document.write( "10th word is"+" "+arr[9]+"; ");
+
+
+
+</script>
 </body>
 </html>  
