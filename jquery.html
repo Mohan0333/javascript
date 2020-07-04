@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">   </script>
+  </head>
+  <body>
+    <h1 id="demo">Hello World</h1>
+	<h1 id="fade" style="display:none">you can't see me<h1>
+	<h1 id="2">john cena<h1>
+<button id="togg">click here to hide and show the hello world text</button>
+<button id="fadein">click here to fadein</button>
+<button id="fadeout">click here to fadeout johncena</button>
+<p id="dclick">Double click here to change text</p>
+<script>
+$(document).ready(function(){
+$("#togg").click(function(){
+$("#demo").toggle();
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#fadein").click(function(){
+$("#fade").fadeIn();
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#fadeout").click(function(){
+$("#2").fadeOut();
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#dclick").dblclick(function(){
+document.getElementById("dclick").innerHTML="I'm double clicked";
+});
+});
+</script>
+ </body>
+</html>
